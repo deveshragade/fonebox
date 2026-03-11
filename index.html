@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonebox Dhule | Buy, Sell & Exchange Smartphones</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; overflow-x: hidden; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.2); }
+        .bg-navy { background-color: #0F172A; }
+        .text-electric { color: #2563EB; }
+        .bg-electric-gradient { background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%); }
+        .card-hover:hover { transform: translateY(-10px); transition: all 0.3s ease; }
+        .float-anim { animation: floating 3s ease-in-out infinite; }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .step-line::after { content: ''; position: absolute; top: 50%; right: -50%; width: 100%; height: 2px; background: #2563EB; z-index: -1; }
+        @media (max-width: 768px) { .step-line::after { display: none; } }
+    </style>
+</head>
+<body>
+
+    <!-- --- STICKY WHATSAPP --- -->
+    <a href="https://wa.me/91XXXXXXXXXX" class="fixed bottom-6 right-6 z-50 bg-[#25D366] p-4 rounded-full shadow-lg hover:scale-110 transition-transform">
+        <i data-lucide="message-circle" class="text-white w-7 h-7"></i>
+    </a>
+
+    <!-- --- NAVBAR --- -->
+    <nav class="fixed w-full z-40 glass">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="bg-electric-gradient p-2 rounded-lg">
+                    <i data-lucide="smartphone" class="text-white w-6 h-6"></i>
+                </div>
+                <span class="text-2xl font-extrabold text-[#0F172A] tracking-tight">Fonebox<span class="text-blue-600">Dhule</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 font-medium text-slate-600">
+                <a href="#sell" class="hover:text-blue-600 transition">Sell Phone</a>
+                <a href="#buy" class="hover:text-blue-600 transition">Buy</a>
+                <a href="#exchange" class="hover:text-blue-600 transition">Exchange</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+            <a href="tel:+91XXXXXXXXXX" class="bg-navy text-white px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-slate-800 transition shadow-lg">
+                Call Store
+            </a>
+        </div>
+    </nav>
+
+    <!-- --- 1️⃣ HERO SECTION --- -->
+    <section class="pt-32 pb-20 bg-navy relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-blue-600/10 blur-[120px] rounded-full"></div>
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-up">
+                <span class="text-blue-400 font-bold tracking-widest uppercase text-sm">Best Mobile Shop in Dhule</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white mt-4 leading-tight">
+                    Buy, Sell & <br><span class="text-blue-500">Exchange</span> Devices
+                </h1>
+                <p class="text-slate-400 mt-6 text-lg max-w-md">
+                    Upgrade your lifestyle. Get the best resale value for your old phone and premium deals on the latest smartphones.
+                </p>
+                <div class="flex flex-wrap gap-4 mt-10">
+                    <button class="bg-electric-gradient text-white px-8 py-4 rounded-xl font-bold shadow-xl shadow-blue-500/20 hover:scale-105 transition">Sell Your Phone</button>
+                    <button class="bg-white/10 text-white border border-white/20 backdrop-blur-md px-8 py-4 rounded-xl font-bold hover:bg-white/20 transition">Browse Store</button>
+                </div>
+                <div class="flex gap-6 mt-12 text-slate-400">
+                    <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="text-green-500 w-5 h-5"></i> Instant Cash</div>
+                    <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="text-green-500 w-5 h-5"></i> Verified Stock</div>
+                </div>
+            </div>
+            <div class="relative flex justify-center" data-aos="zoom-in">
+                <img src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?auto=format&fit=crop&q=80&w=800" alt="iPhone" class="w-72 md:w-96 rounded-[3rem] shadow-2xl border-[8px] border-slate-800 float-anim">
+                <!-- Floating Icons -->
+                <div class="absolute top-10 left-10 bg-white p-4 rounded-2xl shadow-2xl float-anim" style="animation-delay: 1s;">
+                    <i data-lucide="trending-up" class="text-green-500"></i>
+                </div>
+                <div class="absolute bottom-20 right-0 bg-white p-4 rounded-2xl shadow-2xl float-anim" style="animation-delay: 1.5s;">
+                    <i data-lucide="refresh-cw" class="text-blue-600"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- 2️⃣ QUICK SERVICES --- -->
+    <section class="py-20 max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 card-hover" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6">
+                    <i data-lucide="banknote" class="text-blue-600 w-8 h-8"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Sell Your Phone</h3>
+                <p class="text-slate-500">Get an instant price estimate for your old device within 60 seconds.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 card-hover" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-6">
+                    <i data-lucide="shopping-bag" class="text-green-600 w-8 h-8"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Buy Smartphones</h3>
+                <p class="text-slate-500">Latest iPhones, Samsung, and OnePlus at prices lower than online.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 card-hover" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-14 h-14 bg-purple-50 rounded-2xl flex items-center justify-center mb-6">
+                    <i data-lucide="repeat" class="text-purple-600 w-8 h-8"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Smart Exchange</h3>
+                <p class="text-slate-500">Bring your old phone and walk out with a brand new one instantly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- 3️⃣ FEATURED SMARTPHONES --- -->
+    <section id="buy" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl font-extrabold text-navy">Top Deals Today</h2>
+                    <p class="text-slate-500 mt-2">Premium devices at unbeatable prices in Dhule.</p>
+                </div>
+                <button class="text-blue-600 font-bold flex items-center gap-2">View All <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Phone Card 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md group" data-aos="fade-up">
+                    <div class="relative overflow-hidden aspect-[4/5]">
+                        <img src="https://images.unsplash.com/photo-1696446701796-da61225697cc?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-green-500 text-white text-[10px] font-bold px-2 py-1 rounded">NEW IN STOCK</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-lg">iPhone 15 Pro</h4>
+                        <p class="text-sm text-slate-400 mb-3">128GB | Blue Titanium</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-extrabold text-navy">₹74,999</span>
+                            <a href="https://wa.me/91XXXXXXXXXX" class="p-2 bg-green-100 text-green-600 rounded-lg"><i data-lucide="message-circle" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Phone Card 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative overflow-hidden aspect-[4/5]">
+                        <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-blue-500 text-white text-[10px] font-bold px-2 py-1 rounded">CERTIFIED USED</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-lg">Samsung S23 Ultra</h4>
+                        <p class="text-sm text-slate-400 mb-3">256GB | Phantom Black</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-extrabold text-navy">₹62,000</span>
+                            <a href="#" class="p-2 bg-green-100 text-green-600 rounded-lg"><i data-lucide="message-circle" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for other phones -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md group md:block hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative overflow-hidden aspect-[4/5]">
+                        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba3f95?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-lg">iPhone 13</h4>
+                        <p class="text-sm text-slate-400 mb-3">Refurbished - Like New</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-extrabold text-navy">₹36,500</span>
+                            <a href="#" class="p-2 bg-green-100 text-green-600 rounded-lg"><i data-lucide="message-circle" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md group md:block hidden" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative overflow-hidden aspect-[4/5]">
+                        <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-lg">OnePlus 11R</h4>
+                        <p class="text-sm text-slate-400 mb-3">Brand New Seal Pack</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-extrabold text-navy">₹32,999</span>
+                            <a href="#" class="p-2 bg-green-100 text-green-600 rounded-lg"><i data-lucide="message-circle" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- 4️⃣ HOW IT WORKS --- -->
+    <section class="py-20 max-w-7xl mx-auto px-6 overflow-hidden">
+        <h2 class="text-center text-4xl font-extrabold mb-16">How Exchange Works</h2>
+        <div class="grid md:grid-cols-4 gap-12 relative">
+            <div class="text-center relative step-line" data-aos="fade-right">
+                <div class="w-20 h-20 bg-white shadow-xl rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-blue-500">
+                    <i data-lucide="search" class="text-blue-600 w-8 h-8"></i>
+                </div>
+                <h4 class="font-bold text-lg">Select Phone</h4>
+                <p class="text-slate-500 text-sm mt-2">Choose the model you want to sell.</p>
+            </div>
+            <div class="text-center relative step-line" data-aos="fade-right" data-aos-delay="100">
+                <div class="w-20 h-20 bg-white shadow-xl rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-blue-500">
+                    <i data-lucide="tag" class="text-blue-600 w-8 h-8"></i>
+                </div>
+                <h4 class="font-bold text-lg">Get Estimate</h4>
+                <p class="text-slate-500 text-sm mt-2">Instant pricing based on condition.</p>
+            </div>
+            <div class="text-center relative step-line" data-aos="fade-right" data-aos-delay="200">
+                <div class="w-20 h-20 bg-white shadow-xl rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-blue-500">
+                    <i data-lucide="store" class="text-blue-600 w-8 h-8"></i>
+                </div>
+                <h4 class="font-bold text-lg">Visit Store</h4>
+                <p class="text-slate-500 text-sm mt-2">Visit our shop in Dhule for verification.</p>
+            </div>
+            <div class="text-center" data-aos="fade-right" data-aos-delay="300">
+                <div class="w-20 h-20 bg-blue-600 shadow-xl shadow-blue-500/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i data-lucide="check" class="text-white w-10 h-10"></i>
+                </div>
+                <h4 class="font-bold text-lg">Instant Cash</h4>
+                <p class="text-slate-500 text-sm mt-2">Get paid or get a new phone!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- 5️⃣ SELL FORM (QUICK QUOTE) --- -->
+    <section id="sell" class="py-20 bg-navy">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-white rounded-[2rem] p-8 md:p-12 shadow-2xl overflow-hidden relative">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-600 rounded-bl-full opacity-10"></div>
+                <div class="mb-10">
+                    <h2 class="text-3xl font-extrabold text-navy">Get a Price Quote</h2>
+                    <p class="text-slate-500 mt-2">Fill details below and we will call you back.</p>
+                </div>
+                <form class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Your Name</label>
+                        <input type="text" placeholder="John Doe" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Phone Model</label>
+                        <input type="text" placeholder="e.g. iPhone 13" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Condition</label>
+                        <select class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition">
+                            <option>Flawless (No scratches)</option>
+                            <option>Good (Minor scratches)</option>
+                            <option>Average (Heavy usage)</option>
+                            <option>Damaged (Screen crack)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">WhatsApp Number</label>
+                        <input type="tel" placeholder="+91" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition">
+                    </div>
+                    <div class="flex items-end">
+                        <button class="w-full bg-electric-gradient text-white font-bold py-3.5 rounded-xl hover:shadow-xl transition shadow-blue-500/30">Get Quote Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- 6️⃣ STORE LOCATION & CONTACT --- -->
+    <section id="contact" class="py-20 max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-4xl font-extrabold text-navy mb-8">Visit Our Store</h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center shrink-0">
+                            <i data-lucide="map-pin" class="text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Location</h4>
+                            <p class="text-slate-500">Shop No. 5, Premium Market, Near Main Tower, Dhule, Maharashtra 424001</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center shrink-0">
+                            <i data-lucide="phone" class="text-green-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Call Us</h4>
+                            <p class="text-slate-500">+91 98XXX XXXXX</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center shrink-0">
+                            <i data-lucide="clock" class="text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Opening Hours</h4>
+                            <p class="text-slate-500">10:00 AM - 09:30 PM (All Days)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 flex gap-4">
+                    <a href="#" class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                    <a href="#" class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+            <div class="rounded-[2rem] overflow-hidden shadow-2xl h-[400px]">
+                <!-- Replace with actual Google Map Embed -->
+                <iframe class="w-full h-full grayscale hover:grayscale-0 transition duration-700" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119335.79979326442!2d74.69381862590623!3d20.902446700000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdec30d09995555%3A0x6b772099307c805a!2sDhule%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- FOOTER --- -->
+    <footer class="py-12 bg-white border-t border-slate-100 text-center">
+        <p class="text-slate-400">© 2024 Fonebox Dhule. All rights reserved.</p>
+        <p class="text-slate-400 text-sm mt-2">Crafted for Premium Mobile Retailing in Dhule.</p>
+    </footer>
+
+    <!-- --- SCRIPTS --- -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+        // Initialize Animations
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+
+        // Sticky Navbar effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+</body>
+</html>
+
